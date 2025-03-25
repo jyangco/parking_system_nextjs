@@ -1,0 +1,159 @@
+.App {
+    display: flex;
+    justify-content: space-around !important;
+    padding: 10px;
+    width: 95vw;
+    margin: auto;
+}
+
+.left-section {
+    width: 50%;
+    padding: 10px;
+}
+
+.right-section {
+    width: 40%;
+    padding: 20px;
+    border-left: 2px solid #ccc;
+}
+
+.toggle-container {
+    display: flex;
+    justify-content: space-around;
+}
+
+.toggle-container button{
+    width: 40%;
+}
+
+.flex-container{
+    display: flex;
+    justify-content: space-between;
+}
+
+h1, h2 {
+    color: #ffff;
+}
+
+h3 {
+    margin-top: 20px;
+}
+
+.form-container {
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+h2{ 
+    color: black;
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+input[type="number"], select {
+    padding: 8px;
+    width: 100%;
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+
+button {
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+.parking-grid {
+    margin: 20px auto 0; 
+    width: 80%;
+}
+
+.grid-container {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 10px;
+    position: relative;
+    flex-grow: 1;
+    width: 100%;
+}
+
+.parking-slot {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80px;
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    font-weight: bold;
+    cursor: pointer;
+    position: relative;
+    color: black;
+}
+
+.parking-slot.available {
+    background-color: #d4edda;
+}
+
+.parking-slot.occupied {
+    background-color: #f8d7da;
+}
+
+.parking-slot.highlighted {
+    border: 3px solid #ffeb3b;
+    background-color: #ffe082;
+}
+
+.entry-point-left,
+.entry-point-top,
+.entry-point-right {
+    position: absolute;
+    font-weight: bold;
+    background-color: #cce5ff;
+    padding: 10px;
+    color: #0056b3;
+    border-radius: 5px;
+}
+
+.entry-point-left {
+    left: -15%;
+    transform: translateY(-50%) rotate(-90deg);
+}
+
+.entry-point-top {
+    top: -10%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.entry-point-right {
+    right: -15%;
+    transform: translateY(-50%) rotate(-90deg);
+}
+
+.nearest-slot {
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+.message {
+    margin-top: 20px;
+    width: 40%;
+}
