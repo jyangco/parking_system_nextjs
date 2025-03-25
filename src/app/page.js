@@ -90,7 +90,7 @@ const Page = () => {
                     <button onClick={() => setShowParkForm(true) & setMessage('') & setParkedVehicleDetails(null) & setNearestSlot(null)}>
                         Park a Vehicle
                     </button>
-                    <button onClick={() => setShowParkForm(false) & setMessage('') & setParkedVehicleDetails(null)}>
+                    <button onClick={() => setShowParkForm(false) & setMessage('') & setParkedVehicleDetails(null) & setNearestSlot(null)}>
                         Unpark a Vehicle
                     </button>
                 </div>
@@ -109,7 +109,6 @@ const Page = () => {
                                 <h3>Nearest Available Slot:</h3>
                                 <p>Slot ID: {nearestSlot.id}</p>
                                 <p>Size: {nearestSlot.size}</p>
-                                <p>Distance to Entry {parkedVehicleDetails.entryPoint}: {nearestSlot.distances[parkedVehicleDetails.entryPoint === 'A' ? 0 : parkedVehicleDetails.entryPoint === 'B' ? 1 : 2]} meters</p>
                             </div>
                         )}
                     </div>
